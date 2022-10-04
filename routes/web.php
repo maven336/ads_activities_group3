@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyFirstControllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/', function () {
+//      return 2+1;
+// });
+
+//  Route::get('/addition', function () {
+//       return 2+1;
+// });
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-
+Route::get('/displaythesum', 'MyFirstController@index');
 
